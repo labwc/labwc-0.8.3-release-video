@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>labwc</title>
+  <link rel="stylesheet" href="reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="reveal.js/dist/theme/black.css">
+  <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css">
+
+  <style>
+    body {
+	--color-bg: #0d1117;
+	--color-hl: #333;
+	--color-fg: #c9d1d9;
+	--color-link: #ffbce3;
+	--color-subtle: #555;
+	--color-yellow: #f0d70f;
+	--color-red: #d02f90;
+	--pal1: #262A85;
+	--pal2: #29488F;
+	--pal3: #285577;
+	--pal4: #297E8F;
+	--pal5: #26857B;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <section data-background="#0d1117">
+        <img src="img/labwc3-with-text.png" width="199" height="61"/>
+      </section>
+
+      <section data-background="#0d1117" data-autoslide="3000">
+	      <h3 style="color: var(--color-fg);">0.8.3</h3>
+      </section>
+
+      <section data-background="#0d1117" data-autoslide="3000">
+	      <p style="color: var(--color-fg);">
+          <small>With thanks to the <a href="">wlroots</a> team</small>
+        </p>
+      </section>
+
+      <section data-background="#0d1117" data-autoslide="4000">
+        <pre data-id="code-animation"><code class="hljs" data-trim>
+// Simple setup with
+  pcmanfm-qt --desktop (2.1.0)
+  xfce4-panel (>= 4.20.1)
+
+// Note: Panel hides intelligently on maximize
+        </code></pre>
+      </section>
+
+      <section data-background="#000000" data-background-video="video/100-intro.mkv"
+        data-autoslide="27000">
+      </section>
+
+      <!-- Status Report -->
+
+      <section data-background="#0d1117" data-autoslide="8000">
+        <h3 align="left">0.7.2...0.8.3</h3>
+        <ul  align="left" style="font-size: 28px;">
+          <li>
+9 months
+          </li>
+          <li>
+Code base has matured, from 21k lines to 28k in src/
+          </li>
+          <li>
+In Arch and Void main repos. Also in Debian-testing
+          </li>
+          <li>
+Default compositor for all models of Raspberri Pi
+          </li>
+          <li>
+One of the recommended compositors for LXQt and Xfce
+          </li>
+          <li>
+Core team steady at half a dozen active maintainers
+          </li>
+          <li>
+Many more contributors evaluate ideas, submit code and more
+          </li>
+          <li>
+Releasing everying 2-3 months
+          </li>
+        </ul>
+      </section>
+
+      <!-- NEW FEATURES -->
+
+      <section data-background="#0d1117" data-autoslide="8000">
+        <h3 style="color: var(--color-fg);">New Features</h3>
+        <ul  align="left" style="font-size: 28px;">
+          <li>
+ext-workspace protocol
+          </li>
+          <li>
+icons (titlebar and menu)
+          </li>
+          <li>
+client-list-menu-combined
+          </li>
+          <li>
+screen-magnifier
+          </li>
+          <li>
+toplevel pipemenu
+          </li>
+        </ul>
+
+<!--
+  keyboard-layout plugin
+  menu border
+  resize.drawContents
+-->
+
+      </section>
+
+      <section data-background="#0d1117" data-autoslide="4000">
+        <pre data-id="code-animation"><code class="hljs" data-trim>
+// ext-workspace protocol with xfce4-panel
+'ZoomIn' and 'ZoomOut' actions
+        </code></pre>
+      </section>
+      <section data-background="#000000" data-background-video="video/200-ext-workspace.mkv"
+        data-autoslide="26500">
+      </section>
+
+      <section data-background="#0d1117" data-autoslide="4000">
+        <pre data-id="code-animation"><code class="hljs" data-trim>
+// Dynamic root-menu with icons
+        </code></pre>
+      </section>
+      <section data-background="#000000" data-background-video="video/300-menu.mkv"
+        data-autoslide="29500">
+      </section>
+
+      <section data-background="#0d1117" data-autoslide="4000">
+        <pre data-id="code-animation"><code class="hljs" data-trim>
+// client-list-menu-combined
+        </code></pre>
+      </section>
+      <section data-background="#000000" data-background-video="video/310-client-list-menu-combined.mkv"
+        data-autoslide="11500">
+      </section>
+
+      <!-- THE END - WITH A THANK YOU -->
+      <section data-background="#0d1117" data-autoslide="10000">
+        <h3>Thanks to all <a href="">contributors</a></h3>
+	      <p>
+	  The following music was used for this media project:<br />
+    Music (CC BY 4.0): TBC
+        </p>
+      </section>
+      <section data-background="#0d1117">
+      </section>
+
+    </div>
+  </div>
+
+  <script src="reveal.js/dist/reveal.js"></script>
+  <script src="reveal.js/plugin/notes/notes.js"></script>
+  <script src="reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="reveal.js/plugin/highlight/highlight.js"></script>
+  <script>
+  Reveal.initialize({
+    controls: false,
+    progress: false,
+    transition: 'fade',
+    autoSlideStoppable: false,
+    hash: true,
+    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+  });
+  </script>
+</body>
+</html>
